@@ -137,9 +137,19 @@ super + shift + {Left,Down,Up,Right}
 	    || bspc node -m "$dir" --follow
 
 #
-#Brightness control
+# Brightness control
 #
 XF86MonBrightnessUp
 	brightnessctl --device='intel_backlight' s +10%
 XF86MonBrightnessDown
 	brightnessctl --device='intel_backlight' s 10%-
+
+
+#
+# Audio control
+#
+XF86AudioRaiseVolume
+    amixer set Master 10%+
+
+XF86AudioLowerVolume
+    amixer set Master 10%-

@@ -41,7 +41,7 @@
        modeline
                                         ; snazzy, Atom-inspired modeline, plus API
        nav-flash                  ; blink the current line after jumping
-       ;; neotree                    ; a project drawer, like NERDTree for vim
+       neotree                    ; a project drawer, like NERDTree for vim
        ophints
                                         ; highlight the region an operation acts on
        (popup                     ; tame sudden yet inevitable temporary windows
@@ -49,18 +49,18 @@
         +defaults)                ; default popup rules
        (ligatures +extra +fira)
        ;; tabs                       ; an tab bar for Emacs
-       ;; treemacs
+        treemacs
                                         ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
        vc-gutter                        ; vcs diff in the fringe
        ;; vi-tilde-fringe                  ; fringe tildes to mark beyond EOB
        window-select                    ; visually switch windows
-       ;; workspaces        ; tab emulation, persistence & separate workspaces
+        workspaces        ; tab emulation, persistence & separate workspaces
        ;; zen
                                         ; distraction-free coding or writing
 
-       :editor
-       (evil +everywhere)               ; come to the dark side, we have cookies
+       ;;:editor
+       ;;(evil +everywhere)               ; come to the dark side, we have cookies
        file-templates                   ; auto-snippets for empty files
        ;; fold                             ; (nigh) universal code folding
        ;; (format +onsave)
@@ -88,7 +88,7 @@
        :term
        ;; eshell                   ; a consistent, cross-platform shell (WIP)
        ;;shell             ; a terminal REPL for Emacs
-       ;; term              ; terminals in Emacs
+        term              ; terminals in Emacs
        ;; vterm
                                         ; another terminals in Emacs
 
@@ -180,7 +180,7 @@
        ;;rest              ; Emacs as a REST client
        ;;rst               ; ReST in peace
        ;;ruby              ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
-       ;;rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
+       rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
        ;;scheme            ; a fully conniving family of lisps
        sh     ; she sells {ba,z,fi}sh shells on the C xor

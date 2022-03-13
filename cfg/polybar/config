@@ -22,7 +22,7 @@ dark-light = #272A2B
 active-light = #313435
 
 [bar/herbs] 
-#tray-position = right 
+tray-position = right
 ;monitor = LVDS1 
 width =  98%
 height = 35
@@ -38,9 +38,9 @@ bottom = false
 line-size = 1
 wm-restack = bspwm
 
-modules-left = mpd
-modules-center =
-modules-right = alsa mem battery wlan round-left time round-right settings 
+modules-left = menu xwindow
+modules-center = mpd
+modules-right = pulseaudio mem battery wlan time powermenu
 
 font-0 = CaskaydiaCove Nerd Font:style=Bold:pixelsize=11;3
 font-1 = CaskaydiaCove Nerd Font:size=15;3
@@ -147,7 +147,7 @@ type = internal/pulseaudio
 ;format-volume = <ramp-volume> <bar-volume>
 format-volume = <label-volume> <bar-volume>
 ;label-volume = VOL %percentage%%
-label-volume = 󰎆 
+label-volume = 󰎆 %percentage%
 label-volume-foreground =${colors.color12}
 ;extra added 
 ;format-volume-background = ${colors.yellow}
@@ -226,11 +226,11 @@ format-margin = 0
 
 [module/menu]
 type = custom/text
-content = 󱓞   
-;content-background = #81A1C1
-content-foreground = #61afef
+content = Hello, Gallant!
+content-background = #81A1C1
+content-foreground = #4C566A
 click-left = rofi -show drun 
-;content-underline = #4C566A
+content-underline = #4C566A
 content-padding= 1 
 
 [module/xbacklight]

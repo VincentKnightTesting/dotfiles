@@ -32,7 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. These are the defaults.
-(setq doom-theme 'doom-wilmersdorf)
+(setq doom-theme 'doom-nord)
 
 ;; If you intend to use org, it is recommended you change this!
 (setq org-directory "~/org/")
@@ -154,7 +154,6 @@ Version 2020-06-04"
               (when (string-equal " *NeoTree*" (buffer-name (current-buffer)))
                 (evil-window-right 1))))
 
-(after! flycheck :config (advice-add #'flycheck-next-error :after #'recenter-and-blink))
 
 (after! evil
   (require 'evil-textobj-anyblock)
@@ -551,3 +550,4 @@ Version 2020-06-04"
 (add-hook! '(clojure-mode-hook clojurescript-mode-hook emacs-lisp-mode-hook)
   (defun enable-lisp-modes (&rest args)
     (prettier-parens-mode)))
+(setq lsp-diagnostics-provider :none)

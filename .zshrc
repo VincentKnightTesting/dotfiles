@@ -99,5 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export EDITOR='emacs -nw'
+
 alias discord='discord --no-sandbox'
-alias em='emacs'
+alias em='emacs -nw'
+alias ssh="kitty +kitten ssh"
+alias icat="kitty +kitten icat"
+alias cat="bat"
+alias ls='ls -a --color=auto'
